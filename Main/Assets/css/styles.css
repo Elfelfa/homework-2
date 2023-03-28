@@ -41,6 +41,10 @@ header {
     flex-direction: column;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     position: absolute;
     height: 100%;
@@ -98,7 +102,8 @@ nav a:hover {
     justify-content: flex-end;
     font-size: 18px;
     word-wrap: normal;
-    margin-top: 50px;
+    margin-top: 1.6%;
+    width:67%;
     margin-left: 20px;
     text-align: left;
 }
@@ -144,12 +149,18 @@ nav a:hover {
     margin-right: 15%;
 }
 
-.contacts li {
+.contacts a {
     font-size: 20px;
     font-weight: normal;
     margin: auto auto;
     padding-bottom: 3px;
     border-bottom: 3px solid;
+    text-decoration: none;
+}
+
+.contacts a:-webkit-any-link {
+    color: var(--darkblue);
+    text-decoration: none;
 }
 
 .header-top {
@@ -183,6 +194,12 @@ nav a:hover {
     padding: 10px 10px;
 }
 
+#aboutMe {
+}
+
+#contactMe {
+}
+
 #project-cards {
     display: flex;
     justify-content: space-between;
@@ -197,4 +214,7 @@ nav a:hover {
     display: flex;
     flex-flow: column wrap;
     height: 350px;
+}
+
+#work {
 }
