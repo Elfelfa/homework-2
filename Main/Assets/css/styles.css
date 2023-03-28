@@ -41,8 +41,9 @@ header {
     flex-direction: column;
 }
 
-main {
-
+main{
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -69,27 +70,76 @@ nav a:hover {
 }
 
 .body-content {
-
+    display: flex;
+    justify-content: flex-start;
 }
 
-.body-labels {
+.body-content aside {
+    width: 150px;
+    text-align: right;
+    font-size: 64px;
+    margin: 30px 20px 30px 150px;
+    padding-right: 200px;
+    border-right-color: var(--darkblue);
+    border-right-width: 4px;
+    border-style: solid;
+}
 
+.body-content p {
+    justify-content: flex-end;
+    font-size: 18px;
+    word-wrap: normal;
+    margin-top: 50px;
+    margin-left: 20px;
+    text-align: left;
 }
 
 .card-large {
+    margin: 20px;
+    position: relative;
+    flex-grow: 3;
+    background-color: var(--darkblue);
+}
 
+.card-large div {
+    background-color: var(--aqua);
+    color: var(--darkgrey);
+    position: absolute;
+    padding: 10px 10px;
+    bottom: 15px;
+    left: 0px;
 }
 
 .card-small {
-
+    margin: 20px;
+    position: relative;
+    flex-basis: 50%;
+    max-height: 35%;
+    background-color: var(--darkblue);
 }
 
-.contact-me {
-
+.card-small div {
+    background-color: var(--aqua);
+    color: var(--darkgrey);
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    padding: 10px 10px;
 }
 
 .contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 15%;
+}
 
+.contacts li {
+    font-size: 20px;
+    font-weight: normal;
+    margin: auto auto;
+    padding-bottom: 3px;
+    border-bottom: 3px solid;
 }
 
 .header-top {
@@ -118,12 +168,22 @@ nav a:hover {
 
 .hero h2 {
     position: absolute;
-    font-weight: bold;
     bottom: 20px;
     right: 75px;
     padding: 10px 10px;
 }
 
-.project-cards {
+#project-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    height: 700px;
+    margin-right: 15%;
+    width: 100%;
+}
 
+#project-cards section{
+    display: flex;
+    flex-flow: column wrap;
+    height: 350px;
 }
