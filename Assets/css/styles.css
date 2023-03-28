@@ -206,12 +206,6 @@ nav a:hover {
     padding: 10px 10px;
 }
 
-#aboutMe {
-}
-
-#contactMe {
-}
-
 #project-cards {
     display: flex;
     justify-content: space-between;
@@ -226,7 +220,4 @@ nav a:hover {
     display: flex;
     flex-flow: column wrap;
     height: 350px;
-}
-
-#work {
 }
