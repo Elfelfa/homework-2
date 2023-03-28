@@ -72,7 +72,6 @@ nav a {
     background-position: bottom;
     transition: all 0.25s ease-in;
     font-size: 1.4rem;
-
 }
 
 nav a:hover {
@@ -106,6 +105,19 @@ nav a:hover {
     width:67%;
     margin-left: 20px;
     text-align: left;
+}
+
+.card-hover {
+    background-color:rgba(68, 88, 118, 0.4);
+    transition: background-color 0.5s ease-out;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-hover:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .card-large {
@@ -178,7 +190,7 @@ nav a:hover {
     background-size: 1900px;
 }
 
-.hero:after {
+.hero::after {
     position: absolute;
     content:"";
     height:100%;
