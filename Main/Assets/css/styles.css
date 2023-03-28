@@ -41,6 +41,13 @@ header {
     flex-direction: column;
 }
 
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -97,8 +104,8 @@ nav a:hover {
 .card-large {
     margin: 20px;
     position: relative;
+    border: 3px solid var(--aqua);
     flex-grow: 3;
-    background-color: var(--darkblue);
 }
 
 .card-large div {
@@ -113,6 +120,7 @@ nav a:hover {
 .card-small {
     margin: 20px;
     position: relative;
+    border: 3px solid var(--aqua);
     flex-basis: 50%;
     max-height: 35%;
     background-color: var(--darkblue);
@@ -177,6 +185,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
+    margin-top: 25px;
     height: 700px;
     margin-right: 15%;
     width: 100%;
