@@ -1,13 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #FFF;
+    --darkblue: rgb(68, 88, 118);
+    --darkgrey: rgb(49, 51, 56);
+    --aqua: rgb(146, 204, 205);
+}
+
 body {
+    background-color: #FFF;
+    color: var(--darkblue);
+    border-color: var(--darkblue);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    background-color: var(--aqua);
+    color: var(--darkgrey);
+    font-size: 38px;
+    font-weight: bold;
+    text-align: right;
+    width: 250px;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+h2 {
+    background-color: var(--aqua);
+    color: var(--darkgrey);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
 
 }
 
-.nav-bar {
+nav {
+    margin: auto 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--aqua);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--aqua) 0%, var(--aqua) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
 
 }
 
-.body {
-
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--darkgrey);
 }
 
 .body-content {
@@ -34,8 +92,36 @@ body {
 
 }
 
+.header-top {
+    display: flex;
+    background: var(--darkgrey);
+    justify-content: space-between;
+    list-style-type: none;
+}
+
 .hero {
-    
+    display: inline-block;
+    position: relative;
+    height: 225px;
+    background:linear-gradient(to top, rgba(35, 99, 196, 0.6), rgba(85, 153, 255, 0.4)), url("../images/02-hero-bg.jpg");
+    background-size: 1900px;
+}
+
+.hero:after {
+    position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.hero h2 {
+    position: absolute;
+    font-weight: bold;
+    bottom: 20px;
+    right: 75px;
+    padding: 10px 10px;
 }
 
 .project-cards {
